@@ -29,6 +29,7 @@
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
     <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
+		<link href="assets/css/flex.css" rel="stylesheet" />
 </head>
 <body>
 
@@ -53,7 +54,7 @@
                     </a>
                 </li>
                 <li class="active">
-                    <a href="user.html">
+                    <a href="suggestions.html">
                         <i class="pe-7s-box1"></i>
                         <p>Suggestions</p>
                     </a>
@@ -117,12 +118,34 @@
         <div class="content">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-md-12">
                         <div class="card">
                             <div class="header">
-                                <h4 class="title">Insert Card Content</h4>
+                                <h4 class="title">Departments</h4>
+																<p class="category">Select the departments to filter for</p>
                             </div>
+														<div class="departments flex-container flex-row-wrap">
+															<div id="care" class="dept-box">Care</div>
+															<div id="engineering" class="dept-box">Engineering</div>
+															<div id="finance" class="dept-box">Finance/Accounting</div>
+															<div id="hr" class="dept-box">HR/Benefits/Culture/Office</div>
+															<div id="it" class="dept-box">IT</div>
+															<div id="legal" class="dept-box">Legal</div>
+															<div id="marketing" class="dept-box">Marketing</div>
+															<div id="product" class="dept-box">Product</div>
+															<div id="marketing" class="dept-box">Sales</div>
+															<div id="strategy" class="dept-box">Strategy</div>
+														</div>
                         </div>
+												<div class="card filter-card flex-container flex-row-nowrap">
+													<div class="header">
+														<h4 class="title">Filter</h4>
+															<p class="category">Search filters</p>
+													</div>
+													<div class="filter-box">
+														<textarea class="filters">
+													</div>
+												</div>
                     </div>
                 </div>
             </div>
