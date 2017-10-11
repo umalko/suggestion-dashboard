@@ -2835,9 +2835,6 @@ body > .navbar-collapse {
     .dept-box:hover {
       cursor:hand;
     }
-.filter-card.header {
-  flex-grow: 1;
-}
-.filter-box {
-  flex-grow: 9;
-}
+    .filter-box .bootstrap-tagsinput {
+        width: 100%;
+    }

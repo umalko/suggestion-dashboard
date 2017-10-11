@@ -29,6 +29,7 @@
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
     <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
+		<link href="assets/css/bootstrap-tagsinput.css" rel="stylesheet" />
 		<link href="assets/css/flex.css" rel="stylesheet" />
 </head>
 <body>
@@ -118,32 +119,34 @@
         <div class="content">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-4">
                         <div class="card">
                             <div class="header">
                                 <h4 class="title">Departments</h4>
 																<p class="category">Select the departments to filter for</p>
                             </div>
-														<div class="departments flex-container flex-row-wrap">
-															<div id="care" class="dept-box">Care</div>
-															<div id="engineering" class="dept-box">Engineering</div>
-															<div id="finance" class="dept-box">Finance/Accounting</div>
-															<div id="hr" class="dept-box">HR/Benefits/Culture/Office</div>
-															<div id="it" class="dept-box">IT</div>
-															<div id="legal" class="dept-box">Legal</div>
-															<div id="marketing" class="dept-box">Marketing</div>
-															<div id="product" class="dept-box">Product</div>
-															<div id="marketing" class="dept-box">Sales</div>
-															<div id="strategy" class="dept-box">Strategy</div>
-														</div>
+														<div class="content">
+														<select multiple class="departments flex-container flex-row-wrap">
+															<option value="care" class="dept-box">Care</option>
+															<option value="engineering" class="dept-box">Engineering</option>
+															<option value="finance" class="dept-box">Finance/Accounting</option>
+															<option value="hr" class="dept-box">HR/Benefits/Culture/Office</option>
+															<option value="it" class="dept-box">IT</option>
+															<option value="legal" class="dept-box">Legal</option>
+															<option value="marketing" class="dept-box">Marketing</option>
+															<option value="product" class="dept-box">Product</option>
+															<option value="marketing" class="dept-box">Sales</option>
+															<option value="strategy" class="dept-box">Strategy</option>
+														</select>
+													</div>
                         </div>
-												<div class="card filter-card flex-container flex-row-nowrap">
+												<div class="card filter-card">
 													<div class="header">
-														<h4 class="title">Filter</h4>
+														<h4 class="title">Filters</h4>
 															<p class="category">Search filters</p>
 													</div>
-													<div class="filter-box">
-														
+													<div class="content filter-box">
+														<input type="text" value="" data-role="tagsinput"/>
 													</div>
 												</div>
                     </div>
@@ -211,5 +214,11 @@
 
 	<!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
 	<script src="assets/js/demo.js"></script>
+
+	<!--  TagsInput Bootstrap Plugin    -->
+	<script src="assets/js/bootstrap-tagsinput.js"></script>
+
+	<!--  Typeahead Bundle    -->
+	<script src="assets/js/typeahead.bundle.js"></script>
 
 </html>
